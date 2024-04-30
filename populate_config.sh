@@ -65,6 +65,7 @@ main() {
     block_hex=$(curl -s "$NODE_RPC_URL" \
         -X POST \
         -H "Content-Type: application/json" \
+        -H "x-apikey: $NODE_API_KEY" \
         --data '{"method":"eth_blockNumber","params":[],"id":1,"jsonrpc":"2.0"}' \
         | jq -r '.result')
     export INDEXER_START_BLOCK=$((16#${block_hex/0x/} - 1000000))

@@ -67,5 +67,5 @@ file = "/tmp/flare-ftso-indexer.log"
 console = true
 
 [chain]
-node_url = "${NODE_RPC_URL}"
+node_url = "${NODE_RPC_URL_WS}"
 api_key = "${NODE_API_KEY}"
