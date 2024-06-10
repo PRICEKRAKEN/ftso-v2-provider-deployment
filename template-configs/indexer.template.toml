@@ -81,4 +81,4 @@ console = true
 
 [chain]
 node_url = "${NODE_RPC_URL_WS}"
-api_key = "${NODE_API_KEY}"
+api_key = "${NODE_API_KEY_WS}"
